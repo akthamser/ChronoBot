@@ -1,5 +1,6 @@
-# ChronoBot: Journey Through History
+![ThumnailGamJam](https://github.com/akthamser/ChronoBot/assets/105947187/f85c8c12-590e-4136-887a-de6c178f7414)
 
+# ChronoBot: Journey Through History
 Welcome to the GitHub repository for ChronoBot: Journey Through History! This repository contains all the resources and code for our immersive and captivating video game.
 
 
@@ -50,6 +51,7 @@ To experience ChronoBot: Journey Through History, you have two options :
   * Open the project in Unity.
   * Build the project for your desired platform (PC, Mac, etc.).
   * Run the built executable file to embark on your time-traveling adventure.
+
 
 
 
