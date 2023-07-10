@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenu/Menu.uss?fileID=7433441132597879392&amp;guid=25f0f8297c45c4c47be8b3f33c4aefc9&amp;type=3#Menu" />
+    <ui:VisualElement name="Wrapper" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); align-items: center; justify-content: space-between; left: 3%; top: 9%; width: 80%; height: 80%;">
+        <ui:Label tabindex="-1" text="Settings&#10;" display-tooltip-when-elided="true" class="text" style="height: 39px; width: 69px;" />
+        <ui:Slider picking-mode="Ignore" label="Music " value="42" high-value="1" focusable="false" page-size="0" direction="Horizontal" inverted="false" show-input-field="false" name="music" class="text" style="width: 325px; justify-content: center; align-items: flex-start; align-self: center;" />
+        <ui:Slider picking-mode="Ignore" label="Sounds" value="42" high-value="1" focusable="false" page-size="0" direction="Horizontal" inverted="false" show-input-field="false" name="sounds" class="text" style="width: 325px; justify-content: center; align-items: flex-start; align-self: center;" />
+        <ui:Button text="Back" display-tooltip-when-elided="true" name="back" class="menu-button" style="align-self: auto; align-items: stretch;" />
+    </ui:VisualElement>
+</ui:UXML>

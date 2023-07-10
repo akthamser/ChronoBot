@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/MainMenu/Menu.uss?fileID=7433441132597879392&amp;guid=25f0f8297c45c4c47be8b3f33c4aefc9&amp;type=3#Menu" />
+    <ui:VisualElement name="Wrapper" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); align-items: center; justify-content: space-between; left: 3%; top: 9%; width: 100%; height: 100%;">
+        <ui:Label tabindex="-1" text="Credits" display-tooltip-when-elided="true" class="text" />
+        <ui:Label tabindex="-1" text="Unit Dash Team estin @2023" display-tooltip-when-elided="true" class="text" style="height: 29px; width: 106px; justify-content: center; align-items: center; font-size: 10px;" />
+        <ui:Button text="Back" display-tooltip-when-elided="true" name="back" class="menu-button" style="align-self: auto; align-items: stretch;" />
+    </ui:VisualElement>
+</ui:UXML>

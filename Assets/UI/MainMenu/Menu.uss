@@ -1,0 +1,98 @@
+.menu-button {
+    font-size: 55px;
+    color: rgb(255, 255, 255);
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 0;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: none;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+    opacity: 1;
+    position: relative;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-slice-left: 0;
+    -unity-slice-top: 0;
+    -unity-slice-right: 0;
+    -unity-slice-bottom: 0;
+    -unity-slice-scale: 1px;
+    -unity-font: url('project://database/Assets/UI/MainMenu/font/creepycrawlersexpand.ttf?fileID=12800000&guid=e38d3e7158db1084abe8bc5cbacb4db3&type=3#creepycrawlersexpand');
+    -unity-font-style: normal;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    text-overflow: ellipsis;
+    -unity-font-definition: url('project://database/Assets/UI/MainMenu/font/fontD/LuckiestGuy-Regular%20SDF.asset?fileID=11400000&guid=0855b951e9a056e46a9d4d9833cec806&type=2#LuckiestGuy-Regular SDF');
+    -unity-text-outline-width: 5px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+}
+
+.menu-button:hover {
+    font-size: 60px;
+    -unity-background-image-tint-color: rgb(0, 0, 0);
+    scale: 1.15 1;
+    rotate: 3deg;
+    transition-duration: 0.2s, 0s;
+    transition-timing-function: ease-in, ease;
+    transition-delay: 0s, 0s;
+    background-image: url('project://database/Assets/UI/MainMenu/Ellipse%2012.png?fileID=2800000&guid=944e9f8c3ff478a4fb7073d9cf8a9912&type=3#Ellipse 12');
+}
+
+.text {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(255, 255, 255);
+    -unity-font-definition: url('project://database/Assets/UI/MainMenu/font/fontD/LuckiestGuy-Regular%20SDF.asset?fileID=11400000&guid=0855b951e9a056e46a9d4d9833cec806&type=2#LuckiestGuy-Regular SDF');
+    font-size: 55px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -unity-text-outline-width: 5px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+}
+
+.chapter {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0);
+    border-left-color: rgba(255, 255, 255, 0);
+    border-right-color: rgba(255, 255, 255, 0);
+    border-top-color: rgba(255, 255, 255, 0);
+    border-bottom-color: rgba(255, 255, 255, 0);
+    width: 20%;
+    margin-right: 5%;
+    height: 82%;
+    margin-top: 10px;
+}
+
+.chapter:focus {
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-left-width: 1.5px;
+    border-right-width: 1.5px;
+    border-top-width: 1.5px;
+    border-bottom-width: 1.5px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
