@@ -11,7 +11,7 @@ public class InteractionsController : MonoBehaviour
     public UnityEvent OnStartInteracting;
     public UnityEvent OnEndInteracting;
 
-    public string InteractingText = "press E to enter the vent";
+    public string InteractingText = "to enter the vent";
     private bool Inrange;
     public bool Interacting;
 

@@ -11,7 +11,7 @@ public class pauseManager : MonoBehaviour
     // Start is called before the first frame update
     public static pauseManager instance;
     UIDocument _doc;
-    Button _resumeButton;
+    Button _resumeButton;Button _restartButton;
 
     Button _QuitButton;
 
@@ -28,6 +28,8 @@ public class pauseManager : MonoBehaviour
         if(instance==null)
         instance = this;
 
+
+        Paused = false;
         _doc = GetComponent<UIDocument>();
           root = _doc.rootVisualElement;
               root.style.display = DisplayStyle.None; 
@@ -37,17 +39,17 @@ public class pauseManager : MonoBehaviour
 
         _resumeButton = root.Q<Button>("resume");
         _QuitButton = root.Q<Button>("Quit");
+        _restartButton = root.Q<Button>("restart");
 
 
-      
         _resumeButton.clicked  += resume;
       
         _QuitButton.clicked += Quit;
 
+        _restartButton.clicked += Restart;
 
 
-
-        musicSlider= root.Q<Slider>(name: "music");
+        musicSlider = root.Q<Slider>(name: "music");
          soundSlider = root.Q<Slider>("sounds");
 
 
@@ -66,24 +68,30 @@ public class pauseManager : MonoBehaviour
     }
 
 
-
+    private bool Paused = false;
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)&& root.style.display != DisplayStyle.None)
+    
+        if (Input.GetKeyDown(KeyCode.Escape) && Paused)
         {
             resume();
         }
+        else if (Input.GetKeyDown(KeyCode.Escape)&&!Paused)
+        {
+            pause();
+        }
 
-            
     }
 
     private void Quit(){
                 Debug.Log("button clicked");
 
         ScreenFade.instance.FadeIn("MainMenuee");
+        resume();
         }
 
     private void resume(){
+        Paused = false;
         Debug.Log("button clicked");
         root.style.display = DisplayStyle.None;
         Time.timeScale = 1;
@@ -92,23 +100,28 @@ public class pauseManager : MonoBehaviour
     private void Restart()
     {
         ScreenFade.instance.reloadScene();
+        resume();
     }
 
     
 
     public void pause(){
-        print("paused");
           Time.timeScale = 0f;
-                  root.style.display = DisplayStyle.Flex;
-
+          root.style.display = DisplayStyle.Flex;
+        print(root.style.display);
         musicSlider.value = AudioManager.Instance.MusicVolume;
         soundSlider.value = AudioManager.Instance.SoundVolume;
 
         AudioManager.Instance.pauseall();
-
+        Paused = true;
 
     }
 
+    private IEnumerator delay()
+    {
+        yield return null;
+        Paused = true;
+    }
 
   
 }

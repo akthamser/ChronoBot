@@ -47,11 +47,7 @@ public class MovmentController : MonoBehaviour
         if(_rigidbody.velocity.x != 0 && _rigidbody.velocity.z != 0)
             FacingDirection = new Vector3(_rigidbody.velocity.x,0, _rigidbody.velocity.z);
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            print("pause");
-            pauseManager.instance.pause();
-        }
+       
     }
     private void FixedUpdate()
     {

@@ -13,7 +13,7 @@ public class LadderPoint : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             CanUse = true;
-            
+            UserFeedBack.Instance.SetText("Press E To Use The Ledder");
         }
     }
 
@@ -22,6 +22,7 @@ public class LadderPoint : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             CanUse = false;
+            UserFeedBack.Instance.DisableText();
         }
     }
 

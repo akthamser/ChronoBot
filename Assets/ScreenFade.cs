@@ -44,7 +44,7 @@ public class ScreenFade : MonoBehaviour
     {
         AudioManager.Instance.SceneIsloading = true;
         AudioManager.Instance.SoundSources.Clear();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        FadeIn(SceneManager.GetActiveScene().name);
     }
 
 

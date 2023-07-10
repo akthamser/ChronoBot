@@ -17,6 +17,7 @@ public class UserFeedBack : MonoBehaviour
     {
         Instance = this;
         UserFeedBackText.gameObject.SetActive(false);
+        UserFeedBackText.text = "";
     }
 
     public void SetText(string Text)
@@ -27,11 +28,13 @@ public class UserFeedBack : MonoBehaviour
     public void DisableText()
     {
         UserFeedBackText.gameObject.SetActive(false);
+        UserFeedBackText.text = "";
     }
 
     public IEnumerator IDisableText()
     {
         yield return new WaitForEndOfFrame();
         UserFeedBackText.gameObject.SetActive(false);
+        UserFeedBackText.text = "";
     }
 }
